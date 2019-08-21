@@ -1,0 +1,37 @@
+{
+	"name": "@ejc-tsds/iter",
+	"version": "0.0.1",
+	"description": "A simple iterator package handler.",
+	"main": "dist/index",
+	"types": "dist/index",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepublishOnly": "npm run compile",
+		"compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
+		"watch": "tsc -w -p .",
+		"clean": "rm -rf dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ejc-tsds/iter.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": ["iterator", "iterable", "typescript", "helper", "generic"],
+	"author": "Elijah Cobb <elijah@elijahcobb.com> (https://elijahcobb.com/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ejc-tsds/iter/issues"
+	},
+	"homepage": "https://github.com/ejc-tsds/iter#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "latest",
+		"typescript": "latest",
+		"tslint": "latest"
+	},
+	"files": [
+		"dist"
+	]
+}
